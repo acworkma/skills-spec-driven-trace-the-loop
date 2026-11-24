@@ -30,7 +30,7 @@ to check your work.
 
 ## Gaps
 
-- **Scenario with no automated evidence:**
-- **Why it matters:**
-- **Unconfirmed capability:**
-- **Who could confirm it:**
+- **Scenario with no automated evidence:** 003-FR-011-review
+- **Why it matters:** Without a check, a wrong-member attachment could leave automatic attachment active and prevent the required Privacy Office incident review.
+- **Unconfirmed capability:** The system can pause automatic attachment and open a Privacy Office incident review.
+- **Who could confirm it:** Engineering lead, Privacy Office
