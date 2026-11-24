@@ -20,13 +20,13 @@ to check your work.
 
 | Link | What you found |
 | --- | --- |
-| Intent | Brief prompt: "Attach to a member and claim only when certain, never when identifiers point to two members." |
-| Requirement | 003-FR-009: conflicting identifiers must leave the document unattached, on privacy hold, for privacy-trained reviewers only |
-| Scenario | 003-US2-AS3: member ID and claim number identify different members; document goes on privacy hold, unattached |
-| Feature | features/document-triage.feature, "Conflicting identifiers prevent attachment" |
-| Code | src/document-triage.js, triageDocument: conflictingIdentifiers selects privacy-hold and unattached |
-| Evidence | Pending verification: npm run test:bdd -- --tags @003-US2-AS3; the scenario asserts privacy-hold and unattached, but execution was not approved |
-| Not proven by the evidence | That only privacy-trained reviewers can access the hold, or that real conflicting identifiers are detected; the caller supplies a synthetic flag |
+| Intent | Brief prompt: "Time prior-authorization requests and appeals; flag expedited ones; alert at half the window." |
+| Requirement | 003-FR-016: notify the on-call queue when expedited documents arrive outside business hours; 003-FR-014: start the deadline clock at receipt |
+| Scenario | 003-US4-AS3: expedited appeal received at 11:40 p.m. on a Saturday; its clock starts at 11:40 p.m. and the on-call queue is notified |
+| Feature | features/document-triage.feature, "An expedited weekend appeal keeps its original clock" |
+| Code | src/document-triage.js, triageDocument: timed document types return receivedAt as clockStartsAt |
+| Evidence | npm run test:bdd -- --tags @003-US4-AS3: 1 scenario (1 passed), 3 steps (3 passed) |
+| Not proven by the evidence | That the on-call queue is notified: the spec THEN line requires it, but the test checks only that the deadline clock starts at the original receipt time |
 
 ## Gaps
 
