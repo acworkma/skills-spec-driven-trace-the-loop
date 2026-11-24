@@ -20,13 +20,13 @@ to check your work.
 
 | Link | What you found |
 | --- | --- |
-| Intent | |
-| Requirement | |
-| Scenario | |
-| Feature | |
-| Code | |
-| Evidence | |
-| Not proven by the evidence | |
+| Intent | Brief prompt: "Attach to a member and claim only when certain, never when identifiers point to two members." |
+| Requirement | 003-FR-009: conflicting identifiers must leave the document unattached, on privacy hold, for privacy-trained reviewers only |
+| Scenario | 003-US2-AS3: member ID and claim number identify different members; document goes on privacy hold, unattached |
+| Feature | features/document-triage.feature, "Conflicting identifiers prevent attachment" |
+| Code | src/document-triage.js, triageDocument: conflictingIdentifiers selects privacy-hold and unattached |
+| Evidence | Pending verification: npm run test:bdd -- --tags @003-US2-AS3; the scenario asserts privacy-hold and unattached, but execution was not approved |
+| Not proven by the evidence | That only privacy-trained reviewers can access the hold, or that real conflicting identifiers are detected; the caller supplies a synthetic flag |
 
 ## Gaps
 
