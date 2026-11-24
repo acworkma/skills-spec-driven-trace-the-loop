@@ -5,16 +5,6 @@ to check your work.
 
 ## Trace 1
 
-## | Link | What you found |
-## | --- | --- |
-## | Intent | |
-## | Requirement | |
-## | Scenario | |
-## | Feature | |
-## | Code | |
-## | Evidence | |
-## | Not proven by the evidence | |
-
 | Link | What you found |
 | --- | --- |
 | Intent | Brief prompt: "Classify each document with a confidence score; auto-route confident ones, send the rest to people." |
@@ -24,8 +14,6 @@ to check your work.
 | Code | src/document-triage.js, triageDocument: confidence < threshold sends the document to human-review |
 | Evidence | npm run test:bdd -- --tags @003-US1-AS1: 3 scenarios (3 passed) |
 | Not proven by the evidence | That a document sent to human review carries a reason, and that Operations can change a type's threshold (003-FR-005) |
-
-
 
 
 ## Trace 2
