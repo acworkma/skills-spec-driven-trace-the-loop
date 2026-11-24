@@ -1,6 +1,6 @@
 ## Step 1: Follow one behavior from intent to evidence
 
-<img width="800" alt="Exercise 1 of 4 of the Spec-Driven Delivery workshop: Trace the Loop from Intent to Evidence. Follow one rule from intent to passing evidence, and find what green tests do not prove. Tools: Codespaces, GitHub Copilot, OpenSpec and Gherkin. Focus of this exercise: Intent, Requirement, Scenario, Code and Evidence." src="../images/banner.png">
+<img width="800" alt="Exercise 1 of 4 of the Spec-Driven Delivery workshop: Trace the Loop from Intent to Evidence. Follow one rule from intent to passing evidence, and find what green tests do not prove. Tools: Codespaces, GitHub Copilot, OpenSpec and Gherkin. Focus of this exercise: Intent, Requirement, Scenario, Code and Evidence." src="https://github.com/acworkma/skills-spec-driven-trace-the-loop/blob/main/.github/images/banner.png?raw=true">
 
 Welcome to the Contoso Health Plan delivery team, @{{ login }}! :wave: Your team is building inbound document triage: faxes and scans must reach the right queue fast, attach to a member only when certain, and go to people whenever the system is unsure. Before the next planning session, your lead asks you to show how one business rule travels from intent to evidence.
 
@@ -8,7 +8,7 @@ Welcome to the Contoso Health Plan delivery team, @{{ login }}! :wave: Your team
 
 In spec-driven delivery, every behavior leaves a trail. An **intent brief** explains why the change matters. An [OpenSpec](https://github.com/Fission-AI/OpenSpec) **change** holds the proposal and the **requirements** (rules written with MUST or SHALL), each with acceptance **scenarios**. A [Gherkin](https://cucumber.io/docs/gherkin/reference/) **feature** file turns scenarios into examples a machine can run, and the **code** and **tests** produce the evidence. Shared IDs link the trail: `003-FR-004` is a requirement and `003-US1-AS1` is an acceptance scenario.
 
-<img width="800" alt="The spec-driven loop: every approved behavior leaves a trail you can follow, from why to proof. Five linked steps. Intent, why the change matters. Requirement, the rule written with MUST or SHALL. Scenario, an example someone can check. Feature and code, examples that run and the behavior. Evidence, what ran and what passed. Shared IDs such as 003-FR-004 for a requirement and 003-US1-AS1 for an acceptance scenario link the trail. Footer: AI drafts. Humans decide." src="../images/spec-loop.png">
+<img width="800" alt="The spec-driven loop: every approved behavior leaves a trail you can follow, from why to proof. Five linked steps. Intent, why the change matters. Requirement, the rule written with MUST or SHALL. Scenario, an example someone can check. Feature and code, examples that run and the behavior. Evidence, what ran and what passed. Shared IDs such as 003-FR-004 for a requirement and 003-US1-AS1 for an acceptance scenario link the trail. Footer: AI drafts. Humans decide." src="https://github.com/acworkma/skills-spec-driven-trace-the-loop/blob/main/.github/images/spec-loop.png?raw=true">
 
 | Link | Where it lives in this repository |
 | --- | --- |
@@ -31,7 +31,7 @@ Your copy of this repository comes with a ready-made [codespace](https://docs.gi
 
    > ⏳ **Wait:** You are ready when the bottom-left corner of the editor shows **Codespaces** followed by your codespace's name.
 
-   <img width="400" alt="The bottom-left corner of the editor's Status Bar showing Codespaces followed by a generated codespace name" src="../images/codespaces-status.png">
+   <img width="400" alt="The bottom-left corner of the editor's Status Bar showing Codespaces followed by a generated codespace name" src="https://github.com/acworkma/skills-spec-driven-trace-the-loop/blob/main/.github/images/codespaces-status.png?raw=true">
 
 1. Open a terminal with `` Ctrl+` `` (also on Mac), or from the menu (☰) at the top left with **Terminal** > **New Terminal**. Then create a branch for your work.
 
@@ -48,7 +48,7 @@ Your copy of this repository comes with a ready-made [codespace](https://docs.gi
 
 - **No terminal is visible:** In the panel at the bottom of the editor, select the **TERMINAL** tab. If there is no panel, press `` Ctrl+` `` (also on Mac).
 
-  <img width="460" alt="The editor's bottom panel with the TERMINAL tab selected, next to PROBLEMS, OUTPUT, DEBUG CONSOLE and PORTS" src="../images/terminal-tab.png">
+  <img width="460" alt="The editor's bottom panel with the TERMINAL tab selected, next to PROBLEMS, OUTPUT, DEBUG CONSOLE and PORTS" src="https://github.com/acworkma/skills-spec-driven-trace-the-loop/blob/main/.github/images/terminal-tab.png?raw=true">
 
 - **The codespace opened the original exercise:** Close that tab and use the button above, which points to your copy. You can also start one from your repository page: **Code** > **Codespaces** > **Create codespace on main**.
 

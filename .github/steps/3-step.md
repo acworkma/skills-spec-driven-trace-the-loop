@@ -6,7 +6,7 @@ Great catch, @{{ login }}! You found a promise the evidence does not keep. One q
 
 A spec can keep acceptance scenarios that no automated check covers yet, and every spec rests on **capabilities** it assumes exist: a field, a lookup, an interface or a queue. [Copilot Chat](https://docs.github.com/en/copilot/how-tos/chat-with-copilot/chat-in-ide) is good at comparing files to find candidate gaps, but it can be wrong, and only a named owner, such as the engineering lead for that system, can confirm that a capability exists. Until someone does, the capability blocks the **Ready to build** decision. The rule for the whole workshop: AI drafts, humans decide.
 
-<img width="800" alt="Where gaps hide. Five spec scenarios, A to E. Four link to a passing feature scenario or unit test. Scenario D has no automated evidence and is marked as a gap. Below, a note on assumed capabilities: every spec relies on things it expects to exist, such as a field, a lookup, an interface or a queue, and a named owner confirms each one before Ready to build." src="../images/evidence-gap.png">
+<img width="800" alt="Where gaps hide. Five spec scenarios, A to E. Four link to a passing feature scenario or unit test. Scenario D has no automated evidence and is marked as a gap. Below, a note on assumed capabilities: every spec relies on things it expects to exist, such as a field, a lookup, an interface or a queue, and a named owner confirms each one before Ready to build." src="https://github.com/acworkma/skills-spec-driven-trace-the-loop/blob/main/.github/images/evidence-gap.png?raw=true">
 
 ### ⌨️ Activity 1: Find a gap with Copilot
 
@@ -25,7 +25,7 @@ A spec can keep acceptance scenarios that no automated check covers yet, and eve
 
    > 💡 **Tip:** If Copilot answers without reading the files, add them to the chat: type `#` in the chat box and pick each file. Each file you add appears above your prompt.
    >
-   > <img width="350" alt="The Copilot Chat box with three files added as context, shown above the prompt field" src="../images/copilot-chat-context.png">
+   > <img width="350" alt="The Copilot Chat box with three files added as context, shown above the prompt field" src="https://github.com/acworkma/skills-spec-driven-trace-the-loop/blob/main/.github/images/copilot-chat-context.png?raw=true">
 
 1. Pick one ID from the list and verify it yourself: search the repository for it with `Ctrl+Shift+F` (`Cmd+Shift+F` on Mac). It should appear only in the spec.
 
@@ -59,7 +59,7 @@ A spec can keep acceptance scenarios that no automated check covers yet, and eve
 
    > 💡 **Tip:** If a **Compare & pull request** banner appears for `trace-triage`, you can use it instead.
 
-   <img width="600" alt="A repository page with a yellow banner about a branch with recent pushes and a green Compare and pull request button. The branch name in the screenshot is an example; yours is trace-triage." src="../images/compare-pull-request.png">
+   <img width="600" alt="A repository page with a yellow banner about a branch with recent pushes and a green Compare and pull request button. The branch name in the screenshot is an example; yours is trace-triage." src="https://github.com/acworkma/skills-spec-driven-trace-the-loop/blob/main/.github/images/compare-pull-request.png?raw=true">
 
 1. Give it a short title, such as `Trace inbound document triage`, and create the pull request.
 

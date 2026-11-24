@@ -8,7 +8,7 @@ A passing scenario proves only what its `Then` steps assert. The spec's `THEN` l
 
 Each row of your worksheet answers one question:
 
-<img width="592" alt="One trace, seven questions. Intent: why does the team want this? Requirement: which rule must hold? Scenario: which example shows the rule? Feature: which executable example runs it? Code: where does the behavior live? Evidence: what ran, and did it pass? Not proven by the evidence: what do the checks not assert?" src="../images/trace-chain.png">
+<img width="592" alt="One trace, seven questions. Intent: why does the team want this? Requirement: which rule must hold? Scenario: which example shows the rule? Feature: which executable example runs it? Code: where does the behavior live? Evidence: what ran, and did it pass? Not proven by the evidence: what do the checks not assert?" src="https://github.com/acworkma/skills-spec-driven-trace-the-loop/blob/main/.github/images/trace-chain.png?raw=true">
 
 ### ⌨️ Activity: Trace the weekend appeal rule
 
